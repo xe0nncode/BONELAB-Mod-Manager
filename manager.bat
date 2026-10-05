@@ -1,8 +1,8 @@
 @echo off
-echo "-----------------------------"
+echo "|-----------------------------|"
 echo "|BONELAB Mod Manager v1.0    |"
-echo "-----------------------------"
-echo "Checking for updates..."
-curl -s https://raw.githubusercontent.com/xe0nnn/BONELAB-Mod-Manager/main/manager.bat -o manager.bat
+echo "|-----------------------------|"
 echo "Update check complete."
 echo "Launching Mod Manager..."
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0manager.ps1"
+if errorlevel 1 pause
